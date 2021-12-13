@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appview">
+
+
+    <Button
+        android:id="@+id/More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:text="Look For Rooms" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="6dp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/Rater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="56dp"
+        android:text="Rating" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="170dp"
+        android:text="  Name : "
+
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/CRuserInfo"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="171dp"
+
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="170dp"
+        android:text=" - "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Hostel"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="250dp"
+        android:text="Hostel :"
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/CrHostelInfo"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="230dp"
+
+        android:layout_marginTop="250dp"
+        android:text=" - "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CrRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="330dp"
+        android:text=" Room : "
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/CRRommInfo"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginLeft="230dp"
+
+        android:layout_marginTop="330dp"
+        android:text=" - "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rentfee"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="410dp"
+        android:text=" Rent FEE : "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/RentFeeInfo"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginLeft="230dp"
+
+        android:layout_marginTop="410dp"
+        android:text=" - "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="254dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="Your Info"
+        android:textColor="@color/purple_500"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="584dp"
+        android:text="Leave" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="158dp"
+        android:text="Rent Due (Days) :"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="162dp"
+        android:text="_"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

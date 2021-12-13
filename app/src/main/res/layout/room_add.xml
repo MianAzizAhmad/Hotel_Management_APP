@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/appview"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Room Details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/purple_700"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/roomId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/lightOrange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Room ID"
+            android:inputType="number">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/RoomDim"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/lightOrange"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Dimensions(Feet)"
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Rate"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/lightOrange"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="number">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/AC"
+        android:layout_width="378dp"
+        android:layout_height="32dp"
+        android:checked="false"
+        android:text="Air Conditioner"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/WiFi"
+        android:layout_width="378dp"
+        android:layout_height="38dp"
+        android:checked="false"
+        android:text="WiFi"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/roomImage"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="376dp"
+        android:layout_height="27dp"
+        android:id="@+id/progressBar"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmInput"
+        android:text="Add" />
+
+
+</LinearLayout>
